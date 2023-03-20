@@ -5,7 +5,7 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <h1 className="text-5xl lg:text-7xl font-bold mb-5 text-white">
-              Anonymous Bot
+              Anonymous <br /> Bot
             </h1>
             <p className="text-xl lg:text-2xl text-white font-light">
               Send anonymous message in Slack.

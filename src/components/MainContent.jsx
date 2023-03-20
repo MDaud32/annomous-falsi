@@ -18,12 +18,11 @@ const MainContent = () => {
               alt="image1"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[10rem] text-center">
-              Heading 1
+            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[15rem] text-center">
+              Allowed channels
             </h2>
             <p className="text-gray-500 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-              elit, tristique placerat feugiat ac, facilisis vitae arcu.
+              Avoid chaos. Invite the bot to specific channels.
             </p>
           </div>
           <div className="w-full lg:w-1/3 lg:px-3 mb-8 lg:mb-0">
@@ -32,13 +31,10 @@ const MainContent = () => {
               alt="image2"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[10rem] text-center">
-              Heading 2
+            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[15rem] text-center">
+              Completely anonymous
             </h2>
-            <p className="text-gray-500 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-              elit, tristique placerat feugiat ac, facilisis vitae arcu.
-            </p>
+            <p className="text-gray-500 mt-2">No "user is typing" hint.</p>
           </div>
           <div className="w-full lg:w-1/3 lg:pl-6">
             <img
@@ -46,12 +42,11 @@ const MainContent = () => {
               alt="image3"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[10rem] text-center">
-              Heading 3
+            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[15rem] text-center">
+              Respond to Thread
             </h2>
             <p className="text-gray-500 mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-              elit, tristique placerat feugiat ac, facilisis vitae arcu.
+              Send anonymous message to a thread
             </p>
           </div>
         </div>

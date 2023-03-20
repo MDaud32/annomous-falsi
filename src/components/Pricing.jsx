@@ -11,7 +11,7 @@ const Pricing = () => {
       </div>
       <div className="max-w-6xl mx-auto flex flex-wrap justify-between pb-10">
         {/* first card */}
-        <div className="w-3/4 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
+        <div className="w-5/6 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
           <div className="mx-auto h-full w-full shadow rounded-lg bg-gray-100 flex flex-col justify-between">
             <div>
               <div className="pt-4 px-8 pb-4">
@@ -76,7 +76,7 @@ const Pricing = () => {
           </div>
         </div>
         {/* 2nd card */}
-        <div className="w-3/4 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
+        <div className="w-5/6 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
           <div className="w-full h-full mx-auto mb-4 shadow rounded-lg bg-gray-100 flex flex-col justify-between">
             <div>
               <div className="pt-4 px-8 pb-4">
@@ -124,7 +124,7 @@ const Pricing = () => {
           </div>
         </div>
         {/* 3rd card */}
-        <div className="w-3/4 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
+        <div className="w-5/6 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
           <div className="w-full h-full mx-auto shadow rounded-lg bg-gray-100 flex flex-col justify-between">
             <div>
               <div className="pt-4 px-8 pb-4">

@@ -4,9 +4,22 @@ const Banner = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-            <span className="block xl:inline">Get </span>
-            <span className="block text-indigo-400 xl:inline">anonymous</span>
-            <span className="block xl:inline"> feedbacks</span>
+            <span
+              className="
+             ">
+              Get{" "}
+            </span>
+            <span
+              className="
+             text-indigo-400 ">
+              anonymous
+            </span>
+            <span
+              className="
+             ">
+              {" "}
+              feedbacks
+            </span>
           </h2>
           <p className="mt-3 max-w-md mx-auto text-lg text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
             Let your teammates feel secure and express their opinion anonymously
