@@ -12,6 +12,8 @@ const Pricing = () => {
         </p>
       </div>
       <div className="flex flex-wrap justify-between">
+        {/* first card */}
+
         <div className="w-11/12 xl:w-1/3 lg:w-1/2 sm:w-5/12 md:w-5/12 mx-auto mb-4 max-w-sm shadow rounded-lg border border-gray-300 sm:border-none bg-white">
           <div className="pt-8 px-8 pb-6">
             <h4 className="text-2xl text-center text-gray-800 pb-3 font-bold">
@@ -85,7 +87,7 @@ const Pricing = () => {
             </button>
           </div>
         </div>
-        <div className="w-11/12 xl:w-1/3 lg:w-1/2 sm:w-5/12 md:w-5/12 mx-auto mb-4 max-w-sm shadow rounded-lg border-4 border-indigo-700 bg-white">
+        <div className="w-11/12 xl:w-1/3 lg:w-1/2 sm:w-5/12 md:w-5/12 mx-auto mb-4 max-w-sm shadow rounded-lg border-4 hover:border-indigo-700 bg-white">
           <div className="pt-8 px-8 pb-6">
             <h4 className="text-2xl text-center text-gray-800 pb-3 font-bold">
               Pro Plus
