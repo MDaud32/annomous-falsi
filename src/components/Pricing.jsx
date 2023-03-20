@@ -152,7 +152,7 @@ const Pricing = () => {
             </ul>
           </div>
           <div className="flex justify-center pb-8">
-            <button className="focus:outline-none bg-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-6 py-2 text-sm">
+            <button className="focus:outline-none bg-indigo-500 transition duration-150 ease-in-out hover:bg-indigo-600 rounded text-white px-6 py-2 text-sm">
               Subscribe
             </button>
           </div>

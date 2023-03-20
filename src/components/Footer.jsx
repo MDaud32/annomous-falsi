@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="px-6 md:px-28 flex flex-col justify-center w-full py-12 mx-auto bg-[#292C31]">
       <div className="flex flex-col md:flex-row justify-around">
         <div className="w-full md:max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-3 justify-center">
-          <div className="text-gray-500 text-lg flex flex-col">
+          <div className="text-gray-500 text-md flex flex-col">
             <a href="#" className="hover:text-white">
               Home
             </a>
@@ -20,7 +20,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="text-gray-500 text-lg flex flex-col">
+          <div className="text-gray-500 text-md flex flex-col">
             <a href="#" className="hover:text-white">
               Terms of Service
             </a>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-10 md:mt-0">
-          <p className="text-xl mb-4 font-bold text-white uppercase">
+          <p className="text-xl mb-4 font-bold text-indigo-400 uppercase">
             About Us
           </p>
           <p className="text-[12px] max-w-sm text-gray-500">
