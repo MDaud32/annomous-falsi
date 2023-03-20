@@ -18,7 +18,9 @@ const MainContent = () => {
               alt="image1"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4">Heading 1</h2>
+            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[10rem] text-center">
+              Heading 1
+            </h2>
             <p className="text-gray-500 mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
               elit, tristique placerat feugiat ac, facilisis vitae arcu.
@@ -30,7 +32,9 @@ const MainContent = () => {
               alt="image2"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4">Heading 2</h2>
+            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[10rem] text-center">
+              Heading 2
+            </h2>
             <p className="text-gray-500 mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
               elit, tristique placerat feugiat ac, facilisis vitae arcu.
@@ -42,7 +46,9 @@ const MainContent = () => {
               alt="image3"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4">Heading 3</h2>
+            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[10rem] text-center">
+              Heading 3
+            </h2>
             <p className="text-gray-500 mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
               elit, tristique placerat feugiat ac, facilisis vitae arcu.
