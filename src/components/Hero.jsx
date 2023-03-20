@@ -5,14 +5,13 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <h1 className="text-5xl lg:text-7xl font-bold mb-5 text-white">
-              Welcome to my Website
+              Anonymous Bot
             </h1>
             <p className="text-xl lg:text-2xl text-white font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-              elit, tristique placerat feugiat ac, facilisis vitae arcu.
+              Send anonymous message in Slack.
             </p>
             <button className="bg-indigo-500 text-white font-semibold px-6 py-3 mt-8 rounded-md hover:bg-indigo-600 hover:text-white">
-              Get Started
+              Add to Slack
             </button>
           </div>
           <div className="w-full lg:w-1/2">
