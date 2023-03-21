@@ -9,7 +9,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-gray-900 sticky top-0">
+    <nav className="bg-gray-900 shadow-sm shadow-gray-500 sticky top-0">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex w-full justify-between items-center ">

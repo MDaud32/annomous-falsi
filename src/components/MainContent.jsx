@@ -1,11 +1,11 @@
 const MainContent = () => {
   return (
-    <section className="bg-gradient-to-tr from-gray-900 to-blue-900">
+    <section className="shadow shadow-gray-700">
       <div className={"text-center"}>
-        <h1 className="text-5xl lg:text-7xl font-bold mb-5 text-white">
-          Welcome to my Website
+        <h1 className="text-5xl lg:text-7xl font-bold mb-5 pt-8 text-white">
+          Anonymity at your fingertips
         </h1>
-        <p className="text-xl lg:text-2xl text-white font-light">
+        <p className="text-xl lg:text-2xl max-w-3xl mx-auto text-white font-light">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
           elit, tristique placerat feugiat ac, facilisis vitae.
         </p>

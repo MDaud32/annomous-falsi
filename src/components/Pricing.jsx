@@ -1,6 +1,6 @@
 const Pricing = () => {
   return (
-    <div className=" mx-auto pt-16 bg-gradient-to-br from-gray-900 to-blue-900">
+    <div className=" mx-auto pt-16 shadow shadow-gray-700">
       <div className="w-4/5 mx-auto pb-12">
         <h1 className="xl:text-4xl text-3xl text-center text-gray-400 mb-4 font-extrabold">
           Pricing
@@ -14,7 +14,7 @@ const Pricing = () => {
         <div className="w-5/6 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
           <div className="mx-auto h-full w-full shadow rounded-lg bg-gray-100 flex flex-col justify-between">
             <div>
-              <div className="pt-4 px-8 pb-4">
+              <div className="pt-6 px-8 pb-6">
                 <h4 className="text-2xl text-center text-gray-800 pb-3 font-bold">
                   Free Version
                 </h4>
@@ -79,7 +79,7 @@ const Pricing = () => {
         <div className="w-5/6 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
           <div className="w-full h-full mx-auto mb-4 shadow rounded-lg bg-gray-100 flex flex-col justify-between">
             <div>
-              <div className="pt-4 px-8 pb-4">
+              <div className="pt-6 px-8 pb-6">
                 <h4 className="text-2xl text-center text-gray-800 pb-3 font-bold">
                   Plus Version
                 </h4>
@@ -127,7 +127,7 @@ const Pricing = () => {
         <div className="w-5/6 xl:w-[30%] lg:w-1/3 sm:w-5/12 md:w-5/12 mx-auto rounded-lg hover:bg-gradient-to-r p-[4px] from-pink-500 via-red-500 to-yellow-500">
           <div className="w-full h-full mx-auto shadow rounded-lg bg-gray-100 flex flex-col justify-between">
             <div>
-              <div className="pt-4 px-8 pb-4">
+              <div className="pt-6 px-8 pb-6">
                 <h4 className="text-2xl text-center text-gray-800 pb-3 font-bold">
                   Team Version
                 </h4>

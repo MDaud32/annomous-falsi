@@ -2,7 +2,7 @@ import icon from "../assets/icons8-ios-photos.svg";
 
 const Banner = () => {
   return (
-    <div className="bg-gray-900 py-12">
+    <div className="bg-gray-900 py-12 shadow shadow-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">

@@ -9,7 +9,7 @@ import Feature from "./components/Feature.jsx";
 
 function App() {
   return (
-    <div className="bg-[#1C3477]">
+    <div className="bg-[#0F172A]">
       <Navbar />
       <Hero />
       <MainContent />

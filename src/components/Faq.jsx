@@ -14,7 +14,7 @@ const Faq = () => {
     setExpand(i);
   };
   return (
-    <div className="shadow rounded border border-gray-100 border-t-0 max-w-2xl bg-gray-200 my-10 mx-2 md:mx-auto">
+    <div className="shadow rounded border border-gray-100 border-t-0 max-w-2xl bg-gray-200 my-10 mx-2 md:mx-auto shadow-gray-700">
       {data.map((item, i) => (
         <div key={i}>
           <div className="p-4 text-md relative font-medium">
