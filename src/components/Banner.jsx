@@ -1,3 +1,5 @@
+import icon from "../assets/icons8-ios-photos.svg";
+
 const Banner = () => {
   return (
     <div className="bg-gray-900 py-12">
@@ -26,11 +28,10 @@ const Banner = () => {
           </p>
           <div className="mt-10 sm:flex sm:justify-center">
             <div className="rounded-md shadow">
-              <a
-                href="#"
-                className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-600 md:py-4 md:text-lg md:px-10">
-                Learn More
-              </a>
+              <button className="bg-white text-black font-semibold px-6 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">
+                <img src={icon} alt="logo" className="w-8" />
+                Add to Slack
+              </button>
             </div>
           </div>
         </div>

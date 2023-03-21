@@ -5,6 +5,7 @@ import Banner from "./components/Banner.jsx";
 import Pricing from "./components/Pricing.jsx";
 import Footer from "./components/Footer.jsx";
 import Faq from "./components/Faq.jsx";
+import Feature from "./components/Feature.jsx";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Hero />
       <MainContent />
+      <Feature />
       <Banner />
       <Pricing />
       <Faq />

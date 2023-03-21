@@ -1,3 +1,5 @@
+import icon from "../assets/icons8-ios-photos.svg";
+
 const Hero = () => {
   return (
     <section className="bg-gradient-to-br from-gray-900 to-blue-900">
@@ -10,7 +12,8 @@ const Hero = () => {
             <p className="text-xl lg:text-2xl text-white font-light">
               Send anonymous message in Slack.
             </p>
-            <button className="bg-indigo-500 text-white font-semibold px-6 py-3 mt-8 rounded-md hover:bg-indigo-600 hover:text-white">
+            <button className="bg-white text-black font-semibold mt-8 px-4 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">
+              <img src={icon} alt="logo" className="w-8" />
               Add to Slack
             </button>
           </div>

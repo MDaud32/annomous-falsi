@@ -16,8 +16,8 @@ const Faq = () => {
   return (
     <div className="shadow rounded border border-gray-100 border-t-0 max-w-2xl bg-gray-200 my-10 mx-2 md:mx-auto">
       {data.map((item, i) => (
-        <>
-          <div key={i} className="p-4 text-md relative font-medium">
+        <div key={i}>
+          <div className="p-4 text-md relative font-medium">
             <div className="w-5/6 cursor-pointer" onClick={() => toggle(i)}>
               {item.que}
             </div>
@@ -31,7 +31,7 @@ const Faq = () => {
           <div className={`mx-4 ${expand === i ? "content show" : "content"}`}>
             {item.ans}
           </div>
-        </>
+        </div>
       ))}
     </div>
   );

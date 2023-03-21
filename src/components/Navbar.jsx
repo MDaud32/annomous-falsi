@@ -1,4 +1,5 @@
 import { useState } from "react";
+import icon from "../assets/icons8-ios-photos.svg";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ function Navbar() {
                 My Website
               </a>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:flex flex-row items-center">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
                   href="#"
@@ -37,9 +38,13 @@ function Navbar() {
                   Contact
                 </a>
               </div>
+              <button className="bg-white text-black font-semibold px-4 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">
+                <img src={icon} alt="logo" className="w-8" />
+                Add to Slack
+              </button>
             </div>
           </div>
-          <div className="-mr-2 flex md:hidden">
+          <div className="-mr-2 w-full  flex justify-end md:hidden">
             <button
               type="button"
               onClick={toggleMobileMenu}
@@ -69,6 +74,10 @@ function Navbar() {
                 strokeLinejoin="round">
                 <path d="M6 18L18 6M6 6l12 12"></path>
               </svg>
+            </button>
+            <button className="bg-white text-sm text-black font-semibold whitespace-nowrap px-2 py-1 rounded-md hover:bg-gray-100 flex flex-row items-center">
+              <img src={icon} alt="logo" className="w-6" />
+              Add to Slack
             </button>
           </div>
         </div>
