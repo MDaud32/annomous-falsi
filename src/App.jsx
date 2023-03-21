@@ -4,15 +4,17 @@ import MainContent from "./components/MainContent.jsx";
 import Banner from "./components/Banner.jsx";
 import Pricing from "./components/Pricing.jsx";
 import Footer from "./components/Footer.jsx";
+import Faq from "./components/Faq.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#1C3477]">
       <Navbar />
       <Hero />
       <MainContent />
       <Banner />
       <Pricing />
+      <Faq />
       <Footer />
     </div>
   );

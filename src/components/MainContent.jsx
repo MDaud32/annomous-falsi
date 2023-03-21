@@ -18,7 +18,10 @@ const MainContent = () => {
               alt="image1"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[15rem] text-center">
+            <h2 className="text-md font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[8rem] text-center">
+              FREE VERSION
+            </h2>
+            <h2 className="text-2xl font-semibold mt-4 text-white text-left">
               Allowed channels
             </h2>
             <p className="text-gray-500 mt-2">
@@ -31,7 +34,10 @@ const MainContent = () => {
               alt="image2"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[15rem] text-center">
+            <h2 className="text-md font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[8rem] text-center">
+              FREE VERSION
+            </h2>
+            <h2 className="text-2xl font-semibold text-white mt-4 text-left">
               Completely anonymous
             </h2>
             <p className="text-gray-500 mt-2">No "user is typing" hint.</p>
@@ -42,7 +48,10 @@ const MainContent = () => {
               alt="image3"
               className="rounded-md shadow-md"
             />
-            <h2 className="text-xl font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[15rem] text-center">
+            <h2 className="text-md font-semibold mt-4 bg-indigo-500 rounded-full text-white p-2 max-w-[8rem] text-center">
+              PLUS VERSION
+            </h2>
+            <h2 className="text-2xl font-semibold text-white mt-4 text-left">
               Respond to Thread
             </h2>
             <p className="text-gray-500 mt-2">
