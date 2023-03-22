@@ -113,22 +113,24 @@ function Navbar() {
       <div
         className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
         id="mobile-menu">
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
             to="#Hero"
+            onClick={() => setIsMobileMenuOpen(false)}
             smooth
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: "smooth", block: "end" })
-            }
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             Home
           </Link>
 
           <Link
             to="#about"
+            onClick={() => setIsMobileMenuOpen(false)}
             smooth
             scroll={(el) =>
-              el.scrollIntoView({ behavior: "smooth", block: "end" })
+              el.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              })
             }
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             About
@@ -136,6 +138,7 @@ function Navbar() {
 
           <Link
             to="#Testimonials"
+            onClick={() => setIsMobileMenuOpen(false)}
             smooth
             scroll={(el) =>
               el.scrollIntoView({ behavior: "smooth", block: "center" })
@@ -145,7 +148,7 @@ function Navbar() {
           </Link>
           <Link
             to="#pricing"
-            offset={0}
+            onClick={() => setIsMobileMenuOpen(false)}
             smooth
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             Pricing
@@ -153,6 +156,7 @@ function Navbar() {
 
           <Link
             to="#faq"
+            onClick={() => setIsMobileMenuOpen(false)}
             smooth
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             FAQ
