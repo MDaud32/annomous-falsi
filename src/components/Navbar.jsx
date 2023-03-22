@@ -1,5 +1,6 @@
 import { useState } from "react";
 import icon from "../assets/icons8-ios-photos.svg";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,23 +21,49 @@ function Navbar() {
             </div>
             <div className="hidden md:flex flex-row items-center">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a
-                  href="#"
+                <Link
+                  to="#Hero"
+                  smooth
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "end" })
+                  }
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Home
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#about"
+                  smooth
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "end" })
+                  }
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   About
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#Testimonials"
+                  smooth
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: "smooth", block: "center" })
+                  }
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  Contact
-                </a>
+                  Testimonials
+                </Link>
+                <Link
+                  to="#pricing"
+                  offset={0}
+                  smooth
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  Pricing
+                </Link>
+
+                <Link
+                  to="#faq"
+                  smooth
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  FAQ
+                </Link>
               </div>
               <button className="bg-white text-black font-semibold px-4 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">
                 <img src={icon} alt="logo" className="w-8" />
@@ -87,23 +114,49 @@ function Navbar() {
         className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
         id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#"
-            className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          <Link
+            to="#Hero"
+            smooth
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "end" })
+            }
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             Home
-          </a>
+          </Link>
 
-          <a
-            href="#"
-            className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
+          <Link
+            to="#about"
+            smooth
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "end" })
+            }
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             About
-          </a>
+          </Link>
 
-          <a
-            href="#"
-            className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
-            Contact
-          </a>
+          <Link
+            to="#Testimonials"
+            smooth
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: "smooth", block: "center" })
+            }
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            Testimonials
+          </Link>
+          <Link
+            to="#pricing"
+            offset={0}
+            smooth
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            Pricing
+          </Link>
+
+          <Link
+            to="#faq"
+            smooth
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            FAQ
+          </Link>
         </div>
       </div>
     </nav>
