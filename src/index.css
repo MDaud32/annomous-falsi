@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .content {
-  color: #706f6e;
+  color: #6366f1;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
   overflow: hidden;
   max-height: 0;

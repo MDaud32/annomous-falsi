@@ -9,7 +9,7 @@ const Hero = () => {
             <h1 className="text-5xl lg:text-7xl font-bold mb-5 text-white">
               Anonymous <br /> Bot
             </h1>
-            <p className="text-xl lg:text-2xl text-white font-light">
+            <p className="text-xl lg:text-2xl text-gray-400 font-light">
               Send anonymous message in Slack.
             </p>
             <button className="bg-white text-black font-semibold mt-8 px-4 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">

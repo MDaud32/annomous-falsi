@@ -23,7 +23,7 @@ const Banner = () => {
               feedbacks
             </span>
           </h2>
-          <p className="mt-3 max-w-md mx-auto text-lg text-gray-300 sm:text-xl md:mt-5 md:max-w-3xl">
+          <p className="mt-3 max-w-md mx-auto text-lg text-gray-400 sm:text-xl md:mt-5 md:max-w-3xl">
             Let your teammates feel secure and express their opinion anonymously
           </p>
           <div className="mt-10 sm:flex sm:justify-center">

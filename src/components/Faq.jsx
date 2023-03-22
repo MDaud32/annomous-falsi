@@ -14,25 +14,31 @@ const Faq = () => {
     setExpand(i);
   };
   return (
-    <div className="shadow rounded border border-gray-100 border-t-0 max-w-2xl bg-gray-200 my-10 mx-2 md:mx-auto shadow-gray-700">
-      {data.map((item, i) => (
-        <div key={i}>
-          <div className="p-4 text-md relative font-medium">
-            <div className="w-5/6 cursor-pointer" onClick={() => toggle(i)}>
-              {item.que}
+    <div className="my-20">
+      <h1 className="font-bold text-5xl text-center text-gray-200 my-10">
+        FAQ
+      </h1>
+      <div className="shadow rounded border border-gray-700 max-w-2xl bg-[#292C31] mx-2 md:mx-auto shadow-gray-700">
+        {data.map((item, i) => (
+          <div key={i}>
+            <div className="p-4 text-md relative font-medium text-gray-200">
+              <div className="w-5/6 cursor-pointer" onClick={() => toggle(i)}>
+                {item.que}
+              </div>
+              <button
+                aria-label="question-expander"
+                className="text-xl absolute top-0 right-0 p-4 focus:outline-none"
+                onClick={() => toggle(i)}>
+                {expand === i ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
+              </button>
             </div>
-            <button
-              aria-label="question-expander"
-              className="text-xl absolute top-0 right-0 p-4 focus:outline-none"
-              onClick={() => toggle(i)}>
-              {expand === i ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
-            </button>
+            <div
+              className={`mx-4 ${expand === i ? "content show" : "content"}`}>
+              {item.ans}
+            </div>
           </div>
-          <div className={`mx-4 ${expand === i ? "content show" : "content"}`}>
-            {item.ans}
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

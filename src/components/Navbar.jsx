@@ -9,7 +9,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-gray-900 shadow-sm shadow-gray-500 sticky top-0">
+    <nav className="bg-gray-900 shadow-sm shadow-gray-500 sticky top-0 z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex w-full justify-between items-center ">
@@ -75,10 +75,10 @@ function Navbar() {
                 <path d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             </button>
-            <button className="bg-white text-sm text-black font-semibold whitespace-nowrap px-2 py-1 rounded-md hover:bg-gray-100 flex flex-row items-center">
+            {/* <button className="bg-white text-sm text-black font-semibold whitespace-nowrap px-2 py-1 rounded-md hover:bg-gray-100 flex flex-row items-center">
               <img src={icon} alt="logo" className="w-6" />
               Add to Slack
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
