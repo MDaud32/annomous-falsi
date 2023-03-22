@@ -21,8 +21,10 @@ const Faq = () => {
       <div className="shadow rounded border border-gray-700 max-w-2xl bg-[#292C31] mx-2 md:mx-auto shadow-gray-700">
         {data.map((item, i) => (
           <div key={i}>
-            <div className="p-4 text-md relative font-medium text-gray-200">
-              <div className="w-5/6 cursor-pointer" onClick={() => toggle(i)}>
+            <div className="p-4 text-lg relative font-medium text-gray-200">
+              <div
+                className="w-5/6 cursor-pointer underline underline-offset-4"
+                onClick={() => toggle(i)}>
                 {item.que}
               </div>
               <button
@@ -33,7 +35,9 @@ const Faq = () => {
               </button>
             </div>
             <div
-              className={`mx-4 ${expand === i ? "content show" : "content"}`}>
+              className={`mx-4 font-semibold ${
+                expand === i ? "content show" : "content"
+              }`}>
               {item.ans}
             </div>
           </div>

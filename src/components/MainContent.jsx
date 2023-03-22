@@ -12,7 +12,7 @@ const MainContent = () => {
       </div>
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col lg:flex-row items-center justify-center">
-          <div className="w-full lg:w-1/3 lg:pr-6 mb-8 lg:mb-0">
+          <div className="w-full lg:w-1/3 lg:pr-6 mb-8 lg:mb-0 border-b lg:border-none border-gray-700 pb-6 lg:pb-0">
             <img
               src="https://anonymous.falci.me/static/media/feature.invite.png"
               alt="image1"
@@ -28,7 +28,7 @@ const MainContent = () => {
               Avoid chaos. Invite the bot to specific channels.
             </p>
           </div>
-          <div className="w-full lg:w-1/3 lg:px-3 mb-8 lg:mb-0">
+          <div className="w-full lg:w-1/3 lg:px-3 mb-8 lg:mb-0 border-b lg:border-none border-gray-700 pb-6 lg:pb-0">
             <img
               src="https://anonymous.falci.me/static/media/feature.modal.png"
               alt="image2"
