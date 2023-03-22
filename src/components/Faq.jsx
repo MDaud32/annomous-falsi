@@ -14,34 +14,35 @@ const Faq = () => {
     setExpand(i);
   };
   return (
-    <div className="my-20">
-      <h1 className="font-bold text-5xl text-center text-gray-200 my-10">
-        FAQ
-      </h1>
-      <div className="shadow rounded border border-gray-700 max-w-2xl bg-[#292C31] mx-2 md:mx-auto shadow-gray-700">
-        {data.map((item, i) => (
-          <div key={i}>
-            <div className="p-4 text-lg relative font-medium text-gray-200">
-              <div
-                className="w-5/6 cursor-pointer underline underline-offset-4"
-                onClick={() => toggle(i)}>
-                {item.que}
+    <div id="faq" className="bg-gray-900">
+      <div className="mx-auto max-w-7xl py-16 px-6 sm:py-24 lg:px-8">
+        <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
+          Frequently asked questions
+        </h2>
+        <p className="mt-6 max-w-2xl text-base leading-7 text-gray-300">
+          Have a different question and can’t find the answer you’re looking
+          for? Reach out to our support team by{" "}
+          <a
+            href="#"
+            className="font-semibold text-indigo-400 hover:text-indigo-300">
+            sending us an email
+          </a>{" "}
+          and we’ll get back to you as soon as we can.
+        </p>
+        <div className="mt-20">
+          <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-16 sm:space-y-0 lg:grid-cols-3 lg:gap-x-10">
+            {data.map((faq) => (
+              <div key={faq.que}>
+                <dt className="text-lg font-semibold leading-7 text-white">
+                  {faq.que}
+                </dt>
+                <dd className="mt-2 text-base leading-7 text-gray-300">
+                  {faq.ans}
+                </dd>
               </div>
-              <button
-                aria-label="question-expander"
-                className="text-xl absolute top-0 right-0 p-4 focus:outline-none"
-                onClick={() => toggle(i)}>
-                {expand === i ? <RiArrowDropUpLine /> : <RiArrowDropDownLine />}
-              </button>
-            </div>
-            <div
-              className={`mx-4 font-semibold ${
-                expand === i ? "content show" : "content"
-              }`}>
-              {item.ans}
-            </div>
-          </div>
-        ))}
+            ))}
+          </dl>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import icon from "../assets/icons8-ios-photos.svg";
 
 const Hero = () => {
   return (
-    <section className="shadow shadow-gray-700">
+    <section id="Hero" className="shadow shadow-gray-700">
       <div className="container mx-auto px-6 py-32">
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">

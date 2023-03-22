@@ -56,7 +56,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <div className="  ">
+    <div id="pricing" className="">
       {/* Header and Page Header */}
       <div className="mx-auto text-center">
         {/* Page Header */}

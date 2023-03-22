@@ -2,9 +2,9 @@ import icon from "../assets/icons8-ios-photos.svg";
 
 const Banner = () => {
   return (
-    <div className="bg-gray-900 py-12 shadow shadow-gray-700">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
+    <div className="">
+      <div className="mx-auto w-full py-24 sm:py-10">
+        <div className="relative isolate overflow-hidden px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
           <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
             <span
               className="
@@ -26,14 +26,37 @@ const Banner = () => {
           <p className="mt-3 max-w-md mx-auto text-lg text-gray-400 sm:text-xl md:mt-5 md:max-w-3xl">
             Let your teammates feel secure and express their opinion anonymously
           </p>
-          <div className="mt-10 sm:flex sm:justify-center">
-            <div className="rounded-md shadow">
-              <button className="bg-white text-black font-semibold px-6 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">
-                <img src={icon} alt="logo" className="w-8" />
-                Add to Slack
-              </button>
-            </div>
+          <div className="mt-10 flex items-center justify-center gap-x-6">
+            <button className="bg-white text-black font-semibold px-6 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">
+              <img src={icon} alt="logo" className="w-8" />
+              Add to Slack
+            </button>
           </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1024 1024"
+            className="absolute top-1/2 left-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
+            aria-hidden="true">
+            <circle
+              cx={512}
+              cy={512}
+              r={512}
+              fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
+              fillOpacity="0.7"
+            />
+            <defs>
+              <radialGradient
+                id="827591b1-ce8c-4110-b064-7cb85a0b1217"
+                cx={0}
+                cy={0}
+                r={1}
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(512 512) rotate(90) scale(512)">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#E935C1" stopOpacity={0} />
+              </radialGradient>
+            </defs>
+          </svg>
         </div>
       </div>
     </div>
