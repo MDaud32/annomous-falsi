@@ -115,7 +115,7 @@ export default function Example() {
                     {tier.features.map((feature) => (
                       <li key={feature} className="flex">
                         <CheckIcon
-                          className="h-6 w-6 flex-shrink-0 text-rose-500"
+                          className="h-6 w-6 flex-shrink-0 text-[#6366F1]"
                           aria-hidden="true"
                         />
                         <span className="ml-3 text-gray-500">{feature}</span>
