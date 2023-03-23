@@ -1,4 +1,4 @@
-import icon from "../assets/icons8-ios-photos.svg";
+import icon from "../assets/add_to_slack.png";
 
 const Hero = () => {
   return (
@@ -12,9 +12,8 @@ const Hero = () => {
             <p className="text-xl lg:text-2xl text-center md:text-left text-gray-400 font-light">
               Send anonymous message in Slack.
             </p>
-            <button className="bg-white text-black font-semibold mt-8 px-4 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center mx-auto md:mx-0">
-              <img src={icon} alt="logo" className="w-8" />
-              Add to Slack
+            <button className="bg-white text-black font-semibold mt-8  rounded-md hover:bg-gray-100 flex flex-row items-center mx-auto md:mx-0">
+              <img src={icon} alt="logo" className="w-36" />
             </button>
           </div>
           <div className="w-full lg:w-1/2">

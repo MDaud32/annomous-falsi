@@ -3,46 +3,42 @@ import { CheckIcon } from "@heroicons/react/24/outline";
 const pricing = {
   tiers: [
     {
-      title: "Freelancer",
-      price: 24,
-      frequency: "/month",
-      description: "The essentials to provide your best work for clients.",
+      title: "Free Version",
+      price: "Free",
+      frequency: "/forever",
+      description: "Basic anonymous features",
       features: [
-        "5 products",
-        "Up to 1,000 subscribers",
-        "Basic analytics",
-        "48-hour support response time",
+        "Unlimited anonymous messages",
+        "Unlimited number of channels",
+        "Channel restrictions",
+        "Unlimited team size",
+        "No logs, no reports",
       ],
       cta: "Monthly billing",
       mostPopular: false,
     },
     {
-      title: "Startup",
-      price: 32,
+      title: "Plus Version",
+      price: "$10",
       frequency: "/month",
-      description: "A plan that scales with your rapidly growing business.",
+      description: "Individual account",
       features: [
-        "25 products",
-        "Up to 10,000 subscribers",
-        "Advanced analytics",
-        "24-hour support response time",
-        "Marketing automations",
+        "Everything from Free Version",
+        "Respond to thread anonymously",
       ],
       cta: "Monthly billing",
       mostPopular: true,
     },
     {
-      title: "Enterprise",
-      price: 48,
+      title: "Team Version",
+      price: "$99",
       frequency: "/month",
-      description: "Dedicated support and infrastructure for your company.",
+      description: "Team account",
       features: [
-        "Unlimited products",
-        "Unlimited subscribers",
-        "Advanced analytics",
-        "1-hour, dedicated support response time",
-        "Marketing automations",
-        "Custom integrations",
+        "Everything from Plus Version",
+        "Available for all members",
+        "Black list: block some users",
+        "White list: allow only some users",
       ],
       cta: "Monthly billing",
       mostPopular: false,
@@ -60,12 +56,12 @@ export default function Example() {
       {/* Header and Page Header */}
       <div className="mx-auto text-center">
         {/* Page Header */}
-        <div className="mx-auto max-w-2xl py-24 px-6 lg:max-w-7xl lg:py-32 lg:px-8">
+        <div className="mx-auto max-w-2xl py-16 px-6 lg:max-w-7xl lg:py-20 lg:px-8">
           <div className="">
             <h1 className="text-3xl font-bold tracking-tight text-gray-300 sm:text-5xl sm:leading-none lg:text-6xl">
               Pricing plans for teams of all sizes
             </h1>
-            <p className="mt-6 max-w-2xl text-xl mx-auto   text-center text-gray-500">
+            <p className="mt-6 max-w-2xl text-md md:text-xl mx-auto   text-center text-gray-500">
               Choose an affordable plan that's packed with the best features for
               engaging your audience, creating customer loyalty, and driving
               sales.
@@ -102,13 +98,15 @@ export default function Example() {
                   ) : null}
                   <p className="mt-4 flex items-baseline text-gray-300">
                     <span className="text-5xl font-bold tracking-tight">
-                      ${tier.price}
+                      {tier.price}
                     </span>
                     <span className="ml-1 text-xl font-semibold">
                       {tier.frequency}
                     </span>
                   </p>
-                  <p className="mt-6 text-gray-500">{tier.description}</p>
+                  <p className="mt-6 text-gray-200 font-semibold">
+                    {tier.description}
+                  </p>
 
                   {/* Feature list */}
                   <ul role="list" className="mt-6 space-y-6">

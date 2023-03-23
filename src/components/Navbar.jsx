@@ -1,6 +1,7 @@
 import { useState } from "react";
-import icon from "../assets/icons8-ios-photos.svg";
-import { HashLink as Link } from "react-router-hash-link";
+import icon from "../assets/add_to_slack.png";
+import { Link } from "react-scroll";
+import Logo from "../assets/Falci.svg";
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,60 +15,67 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex w-full justify-between items-center ">
-            <div className="flex-shrink-0">
-              <a href="#" className="text-white text-2xl font-bold">
+            <div className="flex-shrink-0 flex flex-row items-center">
+              <a
+                href="#"
+                className="text-white text-2xl font-bold flex flex-row items-center">
+                <img src={Logo} alt="main logo" className="w-16" />
                 My Website
               </a>
             </div>
             <div className="hidden md:flex flex-row items-center">
               <div className="ml-10 flex items-baseline space-x-4">
                 <Link
-                  to="#Hero"
-                  smooth
-                  scroll={(el) =>
-                    el.scrollIntoView({ behavior: "smooth", block: "end" })
-                  }
+                  to="Hero"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </Link>
 
                 <Link
-                  to="#about"
-                  smooth
-                  scroll={(el) =>
-                    el.scrollIntoView({ behavior: "smooth", block: "end" })
-                  }
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   About
                 </Link>
 
                 <Link
-                  to="#Testimonials"
-                  smooth
-                  scroll={(el) =>
-                    el.scrollIntoView({ behavior: "smooth", block: "center" })
-                  }
+                  to="Testimonials"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Testimonials
                 </Link>
                 <Link
-                  to="#pricing"
-                  offset={0}
-                  smooth
+                  to="pricing"
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   Pricing
                 </Link>
 
                 <Link
-                  to="#faq"
-                  smooth
+                  to="faq"
+                  spy={true}
+                  smooth={true}
+                  offset={30}
+                  duration={500}
                   className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                   FAQ
                 </Link>
               </div>
-              <button className="bg-white text-black font-semibold px-4 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">
-                <img src={icon} alt="logo" className="w-8" />
-                Add to Slack
+              <button className="bg-white text-black font-semibold rounded-md hover:bg-gray-100 flex flex-row items-center">
+                <img src={icon} alt="logo" className="w-36" />
               </button>
             </div>
           </div>
@@ -115,49 +123,55 @@ function Navbar() {
         id="mobile-menu">
         <div className="flex flex-col px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
-            to="#Hero"
+            to="Hero"
             onClick={() => setIsMobileMenuOpen(false)}
-            smooth
+            spy={true}
+            smooth={true}
+            offset={-200}
+            duration={500}
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             Home
           </Link>
 
           <Link
-            to="#about"
+            to="about"
             onClick={() => setIsMobileMenuOpen(false)}
-            smooth
-            scroll={(el) =>
-              el.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              })
-            }
+            spy={true}
+            smooth={true}
+            offset={-250}
+            duration={500}
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             About
           </Link>
 
           <Link
-            to="#Testimonials"
+            to="Testimonials"
             onClick={() => setIsMobileMenuOpen(false)}
-            smooth
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: "smooth", block: "center" })
-            }
+            spy={true}
+            smooth={true}
+            offset={-250}
+            duration={500}
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             Testimonials
           </Link>
           <Link
-            to="#pricing"
+            to="pricing"
             onClick={() => setIsMobileMenuOpen(false)}
-            smooth
+            spy={true}
+            smooth={true}
+            offset={-240}
+            duration={500}
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             Pricing
           </Link>
 
           <Link
-            to="#faq"
+            to="faq"
             onClick={() => setIsMobileMenuOpen(false)}
-            smooth
+            spy={true}
+            smooth={true}
+            offset={-220}
+            duration={500}
             className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
             FAQ
           </Link>

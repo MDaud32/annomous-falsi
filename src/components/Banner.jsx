@@ -1,4 +1,4 @@
-import icon from "../assets/icons8-ios-photos.svg";
+import icon from "../assets/add_to_slack.png";
 
 const Banner = () => {
   return (
@@ -27,9 +27,8 @@ const Banner = () => {
             Let your teammates feel secure and express their opinion anonymously
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            <button className="bg-white text-black font-semibold px-6 py-2 rounded-md hover:bg-gray-100 flex flex-row items-center">
-              <img src={icon} alt="logo" className="w-8" />
-              Add to Slack
+            <button className="bg-white text-black font-semibold rounded-md hover:bg-gray-100 flex flex-row items-center">
+              <img src={icon} alt="logo" className="w-40" />
             </button>
           </div>
           <svg
