@@ -1,6 +1,6 @@
 const MainContent = () => {
   return (
-    <section id="about" className="mt-20">
+    <section id="about" className="mt-16">
       <div className={"text-center"}>
         <h1 className="text-4xl lg:text-7xl mx-4 font-bold mb-5 pt-8 text-white">
           Anonymity at your fingertips
