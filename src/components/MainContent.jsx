@@ -5,10 +5,10 @@ const MainContent = () => {
         <h1 className="text-4xl lg:text-7xl mx-4 font-bold mb-5 pt-8 text-white">
           Anonymity at your fingertips
         </h1>
-        <p className="text-md lg:text-2xl px-4 text-gray-400 max-w-3xl mx-auto  font-light">
+        {/* <p className="text-md lg:text-2xl px-4 text-gray-400 max-w-3xl mx-auto  font-light">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
           elit, tristique placerat feugiat ac, facilisis vitae.
-        </p>
+        </p> */}
       </div>
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col lg:flex-row items-center justify-center">
