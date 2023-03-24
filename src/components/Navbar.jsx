@@ -16,12 +16,16 @@ function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex w-full justify-between items-center ">
             <div className="flex-shrink-0 flex flex-row items-center">
-              <a
-                href="#"
-                className="text-white text-2xl font-bold flex flex-row items-center">
+              <Link
+                to="Hero"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="text-white text-2xl font-bold flex flex-row items-center cursor-pointer">
                 <img src={Logo} alt="main logo" className="w-16" />
-                My Website
-              </a>
+                Anonymous Bot
+              </Link>
             </div>
             <div className="hidden md:flex flex-row items-center">
               <div className="ml-10 flex items-baseline space-x-4">
@@ -31,7 +35,7 @@ function Navbar() {
                   smooth={true}
                   offset={-50}
                   duration={500}
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Home
                 </Link>
 
@@ -41,7 +45,7 @@ function Navbar() {
                   smooth={true}
                   offset={-50}
                   duration={500}
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   About
                 </Link>
 
@@ -51,7 +55,7 @@ function Navbar() {
                   smooth={true}
                   offset={-100}
                   duration={500}
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Testimonials
                 </Link>
                 <Link
@@ -60,7 +64,7 @@ function Navbar() {
                   smooth={true}
                   offset={10}
                   duration={500}
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   Pricing
                 </Link>
 
@@ -70,7 +74,7 @@ function Navbar() {
                   smooth={true}
                   offset={30}
                   duration={500}
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
                   FAQ
                 </Link>
               </div>
@@ -129,7 +133,7 @@ function Navbar() {
             smooth={true}
             offset={-200}
             duration={500}
-            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
             Home
           </Link>
 
@@ -140,7 +144,7 @@ function Navbar() {
             smooth={true}
             offset={-250}
             duration={500}
-            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
             About
           </Link>
 
@@ -151,7 +155,7 @@ function Navbar() {
             smooth={true}
             offset={-250}
             duration={500}
-            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
             Testimonials
           </Link>
           <Link
@@ -161,7 +165,7 @@ function Navbar() {
             smooth={true}
             offset={-240}
             duration={500}
-            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
             Pricing
           </Link>
 
@@ -172,7 +176,7 @@ function Navbar() {
             smooth={true}
             offset={-220}
             duration={500}
-            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium cursor-pointer">
             FAQ
           </Link>
         </div>
